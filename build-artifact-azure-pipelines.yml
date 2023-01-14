@@ -29,9 +29,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warfile'
     publishLocation: 'Container'
-
-- task: Maven@4
-  displayName: 'Maven $(System.DefaultWorkingDirectory)/_Rajkumar-Aute_java-sample/pom.xml'
-  inputs:
-    mavenPomFile: '$(System.DefaultWorkingDirectory)/_Rajkumar-Aute_java-sample/pom.xml'
-    goals: test
