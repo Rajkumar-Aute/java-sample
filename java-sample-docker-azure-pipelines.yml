@@ -22,11 +22,11 @@ steps:
     goals: 'package'
 - task: Docker@2
   inputs:
-    containerRegistry: '$(DOCKERHUB)'
+    containerRegistry: 'dockerhubrajkumaraute'
     command: 'login'
 - task: Docker@2
   inputs:
-    containerRegistry: '$(DOCKERHUB)'
+    containerRegistry: 'dockerhubrajkumaraute'
     repository: '$(DOCKER-REPOSITORY)'
     command: 'buildAndPush'
     Dockerfile: '**/AzureDockerfile'
