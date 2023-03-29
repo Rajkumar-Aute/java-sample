@@ -30,3 +30,5 @@ steps:
     repository: '$(DOCKER-REPOSITORY)'
     command: 'buildAndPush'
     Dockerfile: '**/AzureDockerfile'
+    tags: |
+      $(Build.BuildId)
